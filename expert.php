@@ -43,18 +43,16 @@ echo $monday;
 
 
 
-// // === Exercise 3 ===
+// === Exercise 3 ===
 new_exercise(3);
 
-// // This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
+// This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
 
-// $str = “Debugged ! Also very fun”;
-// echo substr($str, 0, 10);
-
-
+$str = "\"Debugged !\" Also very fun";
+echo "&nbsp;" . substr($str, 0, 12) . "&nbsp;";
 
 
-// // === Exercise 4 ===
+// === Exercise 4 ===
 // new_exercise(4);
 
 // // Sometimes debugging code is just like looking up code and syntax...
@@ -62,8 +60,7 @@ new_exercise(3);
 // // Look up whats going wrong with this code, and then fix it
 // // Bonus: can you fix it with changing just one character? (hard)
 
-// foreach($week as $day)
-// {
+// foreach ($week as $day) {
 //     $day = substr($day, 0, -3);
 // }
 
@@ -72,7 +69,7 @@ new_exercise(3);
 
 
 
-// // === Exercise 5 ===
+// === Exercise 5 ===
 // new_exercise(5);
 
 // // The result should be: "Copyright © <current year> - BeCode"
@@ -86,7 +83,7 @@ new_exercise(3);
 
 
 
-// // === Exercise 6 ===
+// === Exercise 6 ===
 // new_exercise(6);
 
 // // The array should be printing every letter of the alphabet (a-z)
@@ -102,7 +99,7 @@ new_exercise(3);
 
 
 
-// // === Exercise 7 ===
+// === Exercise 7 ===
 // new_exercise(7);
 
 // // Have the result of the function say: "Welcome John Smith" or "No access"
@@ -127,7 +124,7 @@ new_exercise(3);
 
 
 
-// // === Exercise 8 ===
+// === Exercise 8 ===
 // new_exercise(8);
 
 // // Check if the link is containing one of the below parts and respond with the correct message
@@ -154,7 +151,7 @@ new_exercise(3);
 
 
 
-// // === Exercise 9 ===
+// === Exercise 9 ===
 // new_exercise(9);
 
 // //Filter the array $areTheseFruits to only contain valid fruits
@@ -172,7 +169,7 @@ new_exercise(3);
 
 
 
-// // === Exercise 10 ===
+// === Exercise 10 ===
 // new_exercise(10);
 
 // // The fixed code should echo the following at the bottom:
