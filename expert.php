@@ -111,55 +111,55 @@ print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical arr
 
 
 // === Exercise 7 ===
-// new_exercise(7);
+new_exercise(7);
 
-// // Have the result of the function say: "Welcome John Smith" or "No access"
-// // Depending on the given information.
-// function login(string $email, string $password)
-// {
-//     if($email == 'john@example.be' || $password == 'pocahontas') {
-//         return 'Welcome John';
-//         return ' Smith';
-//     }
-//     return 'No access';
-// }
-// /* do not change any code below */
-// //should greet the user with his full name (John Smith)
-// echo login('john@example.be', 'pocahontas');
-// //Should say: no access
-// echo login('john@example.be', 'dfgidfgdfg');
-// //Should say: no access
-// echo login('wrong@example', 'wrong');
-// /* You can change code again */
+// Have the result of the function say: "Welcome John Smith" or "No access"
+// Depending on the given information.
+function login(string $email, string $password)
+{
+    if ($email == 'john@example.be' && $password == 'pocahontas') {
+        return 'Welcome John Smith';
+    } else {
+        return 'No access';
+    }
+}
+/* do not change any code below */
+//should greet the user with his full name (John Smith)
+echo login('john@example.be', 'pocahontas') . "<br>";
+//Should say: no access
+echo login('john@example.be', 'dfgidfgdfg') . "<br>";
+//Should say: no access
+echo login('wrong@example', 'wrong');
+/* You can change code again */
 
 
 
 
 // === Exercise 8 ===
-// new_exercise(8);
+new_exercise(8);
 
-// // Check if the link is containing one of the below parts and respond with the correct message
-// function isLinkValid(string $link)
-// {
-//     $unacceptables = array('https:','.doc','.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
+// Check if the link is containing one of the below parts and respond with the correct message
+function isLinkValid(string $link)
+{
+    $unacceptables = array('https:', '.doc', '.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
 
-//     foreach ($unacceptables as $unacceptable) {
-//         if (strpos($link, $unacceptable) == true) {
-//             return 'Unacceptable Found<br />';
-//         }
-//     }
-//     return 'Acceptable<br />';
-// }
-// //invalid link
-// isLinkValid('http://www.google.com/hack.pdf');
-// //invalid link
-// isLinkValid('https://google.com');
-// //VALID link
-// isLinkValid('http://google.com');
-// //VALID link
-// isLinkValid('http://google.com/test.txt');
+    foreach ($unacceptables as $unacceptable) {
+        if (strpos($link, $unacceptable) !== false) {
+            return 'Unacceptable Found<br />';
+        }
+    }
+    return 'Acceptable<br />';
+}
+//invalid link
+echo isLinkValid('http://www.google.com/hack.pdf');
+//invalid link
+echo isLinkValid('https://google.com');
+//VALID link
+echo isLinkValid('http://google.com');
+//VALID link
+echo isLinkValid('http://google.com/test.txt');
 
-
+echo strpos('https://google.com', 'https:');
 
 
 // === Exercise 9 ===
