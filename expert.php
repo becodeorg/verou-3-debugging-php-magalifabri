@@ -74,15 +74,15 @@ print_r($week);
 
 
 // === Exercise 5 ===
-// new_exercise(5);
+new_exercise(5);
 
-// // The result should be: "Copyright © <current year> - BeCode"
-// function copyright(int $year)
-// {
-//     return "&copy; $year BeCode";
-// }
-// //print the copyright
-// copyright(date('Y'));
+// The result should be: "Copyright © <current year> - BeCode"
+function copyright($year)
+{
+    return "&copy; ${year} - BeCode";
+}
+//print the copyright
+echo copyright(date('Y'));
 
 
 
