@@ -88,17 +88,24 @@ echo copyright(date('Y'));
 
 
 // === Exercise 6 ===
-// new_exercise(6);
+new_exercise(6);
 
-// // The array should be printing every letter of the alphabet (a-z)
-// // Fix the code so the for loop pushes each letter of the alphabet in the array
+// The array should be printing every letter of the alphabet (a-z)
+// Fix the code so the for loop pushes each letter of the alphabet in the array
 
-// $arr = [];
-// for ($i = 0; $letter; $i++) {
-//     array_push($arr, $letter);
-// }
+$arr = [];
+$letter = 'a';
+for ($i = 0; $letter; $i++) {
+    array_push($arr, $letter);
 
-// print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
+    if ($letter === 'z') {
+        break;
+    }
+
+    $letter++;
+}
+
+print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
 
 
 
